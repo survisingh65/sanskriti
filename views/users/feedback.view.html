@@ -1,0 +1,67 @@
+<div ng-controller="FeedbackController">
+    <h3 class="text-info"><b>Feedback</b> &nbsp;<i class="fa fa-comment" aria-hidden="true"></i></h3>
+    <p class="text-info">Firstly, we would like to thank you for your interest in Sanskriti. Please leave suggesions and comments to help us improve your exoe</p>
+    <hr>
+    <div id="feedbackDiv">
+        <form class="form-horizontal" ng-submit="postFeedback()" ng-if="!addNewClicked" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" disabled value="{{user.emailId}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="category">Category:</label>
+                <div class="dropdown col-sm-10">
+                    <select class="form-control" id="category">
+                        <option>General</option>
+                        <option>Media</option>
+                        <option>Event</option>
+                        <option>User Login</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="rating">Rating:</label>
+                <div class="dropdown col-sm-10 star-rating" id="rating">
+                    <div class="star-rating">
+                        <div class="star-rating__wrap">
+                            <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                                   title="5 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                                   title="4 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                                   title="3 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                                   title="2 out of 5 stars"></label>
+                            <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                                   title="1 out of 5 stars"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="message">Message:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="message" placeholder="Enter message/comment/suggestion"
+                              required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <p class="text-center text-success"><strong>{{message}}</strong></p>
+        </div>
+
+    </div>
+</div>

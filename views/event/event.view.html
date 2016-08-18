@@ -1,0 +1,54 @@
+<div class="container" ng-Controller="EventController">
+    <div id="eventView">
+        <div>
+            <img class="headerImg" src="images/boston2.jpg" alt="" />
+            <h4 class="text-info text-center">Students can search events outside campus to explore The City Of Boston more..!!!</h4>
+
+        </div>
+        <hr>
+        <div class="col-md-1"></div>
+        <div class="input-group col-md-10">
+            <input type="text" ng-model="query" id="search" class="form-control" placeholder="Search Event around me"
+                   aria-describedby="basic-addon2">
+            <a ng-click="getEvent(query)" class="input-group-addon glyphicon glyphicon-search aria-hidden=true"
+               id="basic-addon2"></a>
+        </div>
+        <div class="col-md-1"></div>
+        <br>
+        <div class="col-md-6" style="overflow:auto; height:590px;">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="record in basicSearchRecords">
+                    <div class="row">
+                        <a href="#/eventDetail/{{record.id}}">
+
+                            <div class="col-md-4">
+                                <img style="width: 70%; margin-left: 30px; margin-top: 10px;"
+                                     alt="{{record.name.text}}" ng-src={{record.logo.url}} check-image>
+                            </div>
+                            <div class="col-md-8" style="padding: 10px;">
+                                <p>
+                                    <b>{{record.name.text}}</b>
+                                </p>
+                                <p>
+                                    <i class="fa fa-calendar-times-o"></i>&nbsp;{{record.start.local |
+                                    date:'EEE, MMM dd yyyy, hh:mm a'}}
+                                </p>
+                                <p>Capacity:&nbsp;{{record.capacity}}</p>
+                            </div>
+
+                        </a>
+                        <a href="" ng-click="createMarker(record)">
+                            <p align="right"><i class="fa fa-map-marker"></i>&nbsp;Map&nbsp;&nbsp;</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-6" style="padding-top: 25px;">
+            <div id ="eEvent" class="map-view">
+
+            </div>
+        </div>
+    </div>
+</div>

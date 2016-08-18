@@ -1,0 +1,67 @@
+<div ng-controller="FaqController">
+    <h3 class="text-info"><b>Frequently Asked Questions</b> &nbsp;<i class="fa fa-question" aria-hidden="true"></i></h3>
+    <p class="text-info">Post the questions if it is not answered below.</p>
+    <hr>
+    <div id="feedbackDiv">
+        <p>
+            <button class="btn btn-warning custom" type="button" data-toggle="collapse" data-target="#q1"
+                    aria-expanded="false" aria-controls="collapseExample">
+                I have not yet received my I-20?
+            </button>
+        </p>
+        <div class="collapse" id="q1">
+            <div class="card card-block">
+                For queries regarding I - 20 s and when you would receive them, write to your respective departments or
+                call up the <abbr title="Office of Global Services">OGS</abbr>.
+            </div>
+        </div>
+        <br>
+        <p>
+            <button class="btn btn-warning custom" type="button" data-toggle="collapse" data-target="#q2"
+                    aria-expanded="false" aria-controls="collapseExample">
+                How good is my department?
+            </button>
+        </p>
+        <div class="collapse" id="q2">
+            <div class="card card-block">
+                It depends on your field of specialization. Some fields have more opportunities than other fields as
+                well. You must get in touch with people in the same field, to learn more about it.
+            </div>
+        </div>
+
+        <hr class="hr-modified">
+        <h4 class="text-warning"><b>Ask Question</b></h4>
+
+        <form class="form-horizontal" id="queryForm" ng-if="!addNewClicked" ng-submit="postQuestion()" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="question">Question:</label>
+                <div class="col-sm-4">
+                    <textarea row="4" class="form-control" id="question" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div>
+            <p class="text-center text-success"><strong>{{message}}</strong></p>
+        </div>
+
+    </div>
+</div>

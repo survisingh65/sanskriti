@@ -1,0 +1,169 @@
+.list-group-item {
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 2px #3E3E3E;
+}
+
+.imageContainer {
+    width:200px;
+    height:200px;
+    background-image: url("images/boston1");
+}
+
+.imgStyle{
+    width: 160px;
+}
+
+.star-rating {
+    line-height:32px;
+    font-size:1.25em;
+    cursor: pointer;
+}
+
+.star-rating{
+    font-size: 0;
+}
+.star-rating__wrap{
+    display: inline-block;
+    font-size: 1rem;
+}
+.star-rating__wrap:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.star-rating__ico{
+    float: right;
+    padding-left: 2px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #FFB300;
+    font-size: xx-large;
+}
+.star-rating__ico:last-child{
+    padding-left: 0;
+}
+.star-rating__input{
+    display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+    content: "\f005";
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #643a3a;
+}
+
+.headerImg{
+    display: block;
+    margin: auto;
+    height: 120px;
+    width: 100%;
+}
+
+.custom {
+    width: 500px !important;
+}
+
+.hr-modified{
+    height:2px;
+    border:none;
+    color:#ec1313;
+    background-color:#ec1313;
+}
+
+.map-view {
+    border: 15px solid white;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px #3A3A3A;
+}
+
+body{
+    background-color: #e2cfbd;
+}
+
+#feedbackDiv{
+    background-color: white;
+    padding: 25px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+#slides_control > div{
+    height: 200px;
+}
+
+#slides_control {
+    position:absolute;
+    width: 400px;
+    left:50%;
+    top:20px;
+    margin-left:-200px;
+}
+
+#map {
+    height:380px;
+}
+
+#eventMap {
+    height:280px;
+}
+
+#eEvent {
+    height:280px;
+}
+
+/*.img-rounded:hover {
+    position:absolute;
+    top:125px;
+    left:135px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}*/
+
+ul.gallery{
+    margin-left: 3vw;
+    margin-right:3vw;
+}
+
+.zoom {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+    width: 200px;
+    height: 125px;
+}
+
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+     -ms-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    position:relative;
+    z-index:100;
+}
+
+@media only screen and (max-width: 768px) {
+    ul.gallery {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+     .DivName {cursor: pointer}
+}

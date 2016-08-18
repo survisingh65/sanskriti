@@ -1,0 +1,374 @@
+<div>
+
+    <div class="col-md-12">
+        <label class="text-info col-md-6" style="font-size: 20px">General Information &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i></label>
+        <label class="control-label col-md-1 text-info" style="font-size: 20px" for="topic">Topic:</label>
+        <div class="dropdown col-sm-5">
+            <select ng-model="infoType" class="form-control" id="topic">
+                <option ng-option value="Apartments">Apartments</option>
+                <option ng-option value="Arrivals">Arrivals</option>
+                <option ng-option value="Car">Renting Car</option>
+                <option ng-option value="Licence">Driver's Licence</option>
+                <option ng-option value="Insurance">Heath Insurance</option>
+                <option ng-option value="Travel">Travel Information</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="col-md-12" id="feedbackDiv">
+        <section id="1" ng-if="infoType == null">
+            <h4 class="text-warning"><b>Books</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">Consult your immediate seniors in your respective departments to find
+                out what books to bring. If no one from your department has replied to you then go to your department
+                website and try and get the course webpage. You will find out which book was used the last time the
+                course was offered. In all probability, the same will be used this time around. If you know the
+                professor's name, it will make it easier to search the department webpage. Else, you can click on the
+                "Employee Directory" link on the university website www.neu.edu. Please explore most of the links on
+                this site as it contains some valuable information. You can also E -mail a faculty member teaching the
+                course for the current academic year and ask them as to what book(s) they are going to refer to.
+                <br><br>
+                <strong>Note:</strong> <i>Your seniors might give you a list of books but that might be old and
+                    professors here
+                    keep updating and revising what books they refer to for their courses. More-so, it might happen that
+                    a
+                    different professor is taking the course which was offered by another professor last time that
+                    course
+                    was offered and your seniors took it. The books that the two professors refer to might be
+                    different.</i></p>
+
+            <br><br>
+            <h4 class="text-warning"><b>Financial Aid</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+            <blockquote>
+                No one can tell you if you will or will not get it. It is possible as much as it is not possible. You
+                will hear this a lot for aid scene here "Be at the right place at the right time". I'll add that you got
+                to be the "right person" for that position too. Every one who comes here is all pumped up and try and
+                hit in all directions for aid. So be aware that you are facing a very good competition when it comes to
+                financial aid. Give a lot of introspection as to what you think are your SPECIAL ABILITIES and market
+                yourself on those.
+                <footer>Nitish Gupta.</footer>
+            </blockquote>
+            </p>
+            <br>
+            <p class="bg-success">There are different types to aid in NU. The basic one is a NUTA. It stands for
+                Northeastern University Tuition Assistance. It pays your tuition in return for 10 hours of work per week. You can
+                work 10 hours per week off - campus to support your living expenses. 10 Hours will not give you a lot of money
+                but
+                you get your tuition paid!!!</p>
+
+            <br><br>
+            <h4 class="text-warning"><b>Co-op</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">Northeastern is ranked no. 1 in co-op in the entire USA. Though this
+                pertains mainly to undergraduates, most graduate students manage to find a position easily. After 2
+                semesters of your masters, you can work full time for a company for 6 to 8 months.
+                <br><br>
+                This comes under your I-20 as cpt or curricular practical training. So it does not affect your OPT after
+                your masters. A co-op extends your masters degree by 6-8 months but then it gives you a hands-on
+                experience in the
+                industry and it's easier to find jobs in the U.S.A. after a co-op.
+                <br><br>
+                There are co-op seminars held throught the campus during the first few weeks of each semester. Make it a
+                point to attend them. They are usually conducted by the department of career services. If you are in the
+                department of Computer science then they have a special training where they help you
+                with resumes, cover letters, interview you and also try to get you an on- campus placement. Depending on
+                the company you work in, a coop can pay enough to cover your tuition for around one or two
+                semesters, which is the added silver lining.
+                <br><br>
+                To learn more about co-op look at the co-op tab in you're <a href="http://www.myneu.neu.edu">MY-NEU</a>
+                account. Also look at Northeastern's
+                co-op website</p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="2" ng-if="infoType == 'Apartments'">
+            <h4 class="text-warning"><b>Lease period and deposits</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Usually there are two types of lease depending on the period of lease: 6 months lease & 12 months lease.
+                (In some places they allow a 3 month lease too, but the rent increases in that case). You have to pay 1
+                months rent as security deposit and sometimes around 10$ to 15$ as a key deposit.
+                <br><br>
+                Rent for the apartment in basements is less than other apartments. Very few people prefer to stay in
+                basements because of security reasons. So when you ask about availability of apartments it is possible
+                that the Manager will say only basement apartment is available. Hence insist for apartment on first or
+                second floor if you don't want a basement apartment. Otherwise after renting a basement apartment you
+                will realize that apartments other than in basements were also available.</p>
+            <br>
+            <h4 class="text-warning"><b>Utilities</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Check whether your rent includes utilities such as hot water, Cable etc. Otherwise you end up spending
+                around 100$ to 150$ for electricity bill if you have to pay for hot water.</p>
+
+            <br>
+            <h4 class="text-warning"><b>Lease Terms</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Understand the lease terms properly because some of the times you need to break the lease. if you want
+                to break the lease</p>
+            <ul class="text-warning">
+                <li>You have to give 30 days notice.</li>
+                <li>You lose your security deposit.</li>
+                <li>In some cases they (the apartment management) try to find somebody who wants to rent your apartment.
+                    If they don't get anybody within 30 days period You have to pay 1 month's rent extra. In this
+                    situation you lose your security deposit plus one months rent. Get these terms clarified before
+                    signing the lease papers.
+                </li>
+            </ul>
+
+            <br>
+            <h4 class="text-warning"><b>Some more links</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                NU Off-campus Housing has a list of realtors in the area.</p>
+            <ul>
+                <li><a href="www.bostonrealtysource.com">www.bostonrealtysource.com</a></li>
+                <li><a href="http://boston.craigslist.org">http://boston.craigslist.org - your best bet.</a></li>
+                <li><a href="http://www.grandcentralapartments.com">http://www.grandcentralapartments.com</a></li>
+                <li><a href="www.google.com">Google of course!!</a></li>
+            </ul>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="3" ng-if="infoType == 'Arrivals'">
+            <h4 class="text-warning"><b>International Stops</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Generally passengers are required to get down at an International stop, which might be for Security
+                checkup or cleaning of the airplane. You may be given a 'transit card` or say 'transit visa`. Normally
+                the halt is for a couple of hours. Listen to the announcement which is always made before the
+                international halt. You will hear information about departure time, gate number etc. After getting down
+                at Intl. Airport, you can move around in the airport. But be at the gate within 45 minutes of your
+                flight's departure for the onward journey, 'cause they may require to check your tickets etc. Once you
+                get in, you are all set to take off for the final destination.</p>
+            <br>
+
+            <h4 class="text-warning"><b>Immigration</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                The first thing you need to go through at the port-of-entry U.S. airport (international airport where
+                you first land in the U.S.), after landing is the immigration and customs clearance. After which you may
+                board a domestic flight to reach your final destination. Before getting down at your port-of-entry final
+                international halt, inside the plane, you will be given a form to fill up called I-94. Specify your
+                contact number and address. You can also give ISSI's address if you have not fixed anything yet.
+                <br><br>
+                On alighting from the plane you may ask people or signs will guide you to the immigration. Keep your
+                passport, H1-paper ( Blue form ) and the form you filled inside the plane, handy. At the counter you
+                might be asked some questions. <i>TALK ABSOLUTELY TO THE POINT. DON`T TRY TO LIE. MAKE SURE THAT
+                WHATEVER
+                YOU SAY IS WRITTEN ON THE PAPER.</i> You will be given the counter foil of I-94 form. Keep that very
+                carefully. And say to yourself <strong>"WELCOME TO USA"</strong>.
+            </p>
+            <br>
+
+            <h4 class="text-warning"><b>Domestic Flight</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Since the Port-of-entry may not be your final destination in the U.S. and you have to proceed onwards,
+                locate the counter for the domestic airline you will be taking to your final destination. Above all
+                don't hesitate or feel shy to ask for help from airport support staff (at information desks) or police
+                officers, if you need anything. Follow signs directing you to your domestic flight because you will need
+                a boarding pass. If it is far away, take the Airport shuttle (bus) service which is free. If you don't
+                know where to get down, tell the driver in advance and he will drop you off at the proper place. At the
+                counter (podium) check-in your baggage and get your boarding pass issued and ready.
+                <br><br>
+                On arrival at the final destination, collect your baggage once again and look around for that someone
+                who may be there to receive you. If you don't find anyone or you already have specific instructions,
+                follow those. <strong>
+            <p class="bg-primary">Remember to keep ISSI phone number and address handy</p></strong>.
+            </p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="4" ng-if="infoType == 'Car'">
+            <h4 class="text-warning"><b>Renting a Car</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                You can pay either a monthly rate or a daily rent. Here is some information you will need OR should know
+                when you want to rent a car.
+                <br><br>
+            <ul class="text-warning">
+                <li>The driver/co-drivers need to be at least 25 years old.</li>
+                <li>Credit Card is required to rent a car. Else a deposit of about $300. Most companies do not allow you
+                    to rent a car if you do not have a credit card.
+                </li>
+                <li>You need a valid driver's license to drive a rental car.</li>
+                <li>Well known car renting companies are Hertz, Avis, Alamo, Budget, Dollar, Enterprise etc.</li>
+                <li>Car Insurance has to be bought for the Rental car. It is a separate charge or is included in the
+                    total per day renting cost. Some credit card companies pay for the insurance if you use their card
+                    to book a car e.g. American Express Credit Card, in such a case you need not buy insurance from the
+                    car rental company.
+                </li>
+                <li>You have to register the other drivers too as co-drivers of the rental car while booking the car.
+                    They should have valid driver's licenses too. Nobody else should be allowed to drive the car other
+                    than those registered!
+                </li>
+                <li>Unlimited mileage or fixed mileage is also a criteria which decides the hiring charges of a rental
+                    car.
+                </li>
+                <li>You can make the booking over the phone/online. But you have to go personally to pick-up the car
+                    from the renting agency.
+                </li>
+                <li>Generally the gas (fuel) tank is full and you are supposed to return it with a full tank.</li>
+                <li>Some rental agencies do not allow you to rent their car for travel outside the state.</li>
+                <li>There are various types of cars that can be booked. Generally depending on the seating capacity,
+                    such as small, medium, compact, large, full-size, premium, mini-van, van etc. One may even choose
+                    the make of the car if available. The rental agencies maintain the cars in good shape and generally
+                    have new cars.
+                </li>
+                <li>The renting charges vary depending on the season, weekend/weekday, for how many days you want the
+                    car, how much in advance you are booking, availability, type of car etc.
+                </li>
+            </ul>
+            </p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="5" ng-if="infoType == 'Licence'">
+            <h4 class="text-warning"><b>Information</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                Driver's license is one of the most important documents required in the United States. It is in your
+                best interest to get an Driver's License as soon as possible. This is because, a driver's license serves
+                a dual purpose - it allows you to drive a car and it also serves as a valid photo bearing identification
+                which you need to show at many places like banks, grocery stores etc.At most places Driver's license is
+                the only valid PHOTO-ID.
+                <br><br>
+                The road rules are very different from and far stricter than those in India. Getting used to right hand
+                drive and the road speeds in the U.S. can also take some time. You will need to take a few lessons,
+                familiarize yourself with the driving rules for your state, and buy some insurance before taking to the
+                road.
+                <br><br>
+                Though you will have to obtain an in-state American license eventually (the time period allowed to do
+                this differs from state to state), an IDP will soon make you functional on the road. You can drive on
+                your IDP until it expires (Be very careful though). On no account should you attempt to drive as soon as
+                you arrive in the U.S.as you may do yourself some grave injury. You can get a driver's license the day
+                you get your Social Security.
+                <br><br>
+            <p class="bg-primary">You need a Date of Birth proof and a Proof of Signatures. You can not use the same
+                document for both
+                proofs.</p>
+            <br>
+            Use your passport AND your social security card for your identity - date of birth included. For
+            signature proof you can use a cleared check from the bank, a copy is good enough for that (which can be
+            available online too) or your IDP, if you have one.
+            <br><br>
+            For residence proof, use a utility bill or bank statement (cell phone is not a utility but a luxury and
+            credit card statement is not a valid bank statement).</p>
+
+            <h3 class="text-warning">Useful Links:</h3>
+            <p><a href="http://www.massrmv.com/">Read the manual at the Massachusetts Registry of Motor Vehicles (RMV)
+                website</a></p>
+            <p><a href="http://www.massrmv.com/">Check this link out for more information</a></p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="6" ng-if="infoType == 'Insurance'">
+            <h4 class="text-warning"><b>Medical Insurance</b></h4>
+            <hr class="hr-modified">
+            <p class="text-justify text-warning">
+                In the U.S., it is <strong>MANDATORY</strong> to have health Insurance. For the initial days say a
+                month, get a plan from India.
+                <br><br>
+                In the U.S. you can take -
+
+            <ol class="bg-primary">
+                <li>NU Health Insurance (NUSHIP) - Though expensive, it is an excellent plan, and provides full support.
+                    People who have a tendency to fall sick must take this.
+                </li>
+                <li>Other third party insurances such as the ICSWEB (Plan B). That is the most widely used insurance
+                    policy among Indian graduate students. The best part about ICS is that you can pay your premium in
+                    installments of 3 months. That really helps in the settling down phase.
+                </li>
+                <li>Another insurance website is http://www.travelinsure.com which is cheaper than ICS Web.</li>
+            </ol>
+            <br>
+            </p>
+            <p class="text-warning">
+                DO NOT buy any two year health insurance plan from India. A one month plan is fine. Ask the company as
+                to
+                how they settle payments, whether you have to call a person in India . Most of them are partners with
+                International agencies for operations in the U.S. Give them a scenario where someone who has their
+                policy
+                falls sick and has to see a doctor and ask them to explain the whole process from there. That will give
+                you
+                a better idea of each policy.
+                <br><br>
+                Once you get access to your my-neu account, <strong>DO NOT FORGET</strong> to <i>waive the NU-SHIP fee
+                from
+                your tuition amount
+                if you are taking some other policy</i>.
+
+            </p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+        <section id="7" ng-if="infoType == 'Travel'">
+            <h4 class="text-warning"><b>Travelling abroad on a F1 visa</b></h4>
+            <hr class="hr-modified">
+            <p class="text-warning">
+                Always remember to visit the <abbr title="Office of Global Services">OGS</abbr> before you make any trip
+                abroad and get your I-20 signed if more than
+                6 months have elapsed since you last travelled . Visit the ISSI website for details regarding necessary
+                documents.
+                <br>
+            <dl>
+                <dt>
+                    TRAVEL ADVISORY FOR F-1 STUDENTS ENGAGED IN POST-COMPLETION OPTIONAL PRACTICAL TRAINING (OPT)
+                </dt>
+                <dd>
+                    <blockquote>The U.S. Department of Homeland Security (DHS) has issued a new interpretation of the
+                        regulations
+                        pertaining to travel of F-1 visa holders engaged in post-completion Optional Practical Training
+                        (OPT). Please read the information below carefully if you are an F-1 student planning to travel
+                        outside the U.S. while engaging in post-completion OPT. The International Student & Scholar
+                        Institute (ISSI) advises F-1 students on post-completion OPT to adhere to the following
+                        guidelines
+                    </blockquote>
+                </dd>
+            </dl>
+            </p>
+            <br>
+            <p class="bg-success">
+                It is crucial that you prepare the necessary documents for travel during post-completion OPT. Please
+                contact
+                the ISSI at 617-373-2310 in case you have questions/concerns regarding this new interpretation of the
+                regulations. 206 Ell Hall; issi@neu.edu; www.issi.neu.edu
+            </p>
+
+            <hr class="hr-modified">
+            <blockquote class="blockquote-reverse">
+                <footer>From <abbr title="Office of Global Services">OGS</abbr> website</footer>
+            </blockquote>
+        </section>
+
+    </div>
+</div>

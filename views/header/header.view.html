@@ -1,0 +1,48 @@
+<div id="bootstrapOverWriteNavbarDefault" ng-Controller="HeaderController">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <img class="imgStyle" src="images/logo.png"/>
+        <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#/home">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Media<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#/photo">Photo</a></li>
+                    <li><a href="#/event">Video</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">General Information<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#/event">Happening Around Me</a></li>
+                    <li><a href="#/information">Information</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#/faq">FAQ</a></li>
+                    <li><a ng-show="currentUser" href="#/feedback">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="test.html">Event</a></li>
+            <li><a ng-show="currentUser && currentUser.roleAdmin.indexOf('Y') >=0" href="test.html">Upload</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a ng-show="!currentUser" href="#/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            </li>
+            <li><a ng-show="!currentUser" href="#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a ng-show="currentUser">{{currentUser.fName}}</a></li>
+            <li><a ng-show="currentUser" href="#/feedback"><span class="glyphicon glyphicon-log-in"></span> Feedback</a>
+            </li>
+            <li><a ng-show="currentUser" ng-click="logout()" href="#"><span class="glyphicon glyphicon-log-out"></span>
+                Log Out</a></li>
+        </ul>
+    </div>
+</div>
+<!--</nav>-->
+<!--</div>-->
